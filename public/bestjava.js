@@ -266,27 +266,27 @@ function UpdateData(e) {
 
 function UpdatePhotoData(e) {
   e.preventDefault();
-  var updatedBook = {};
-    updateBook.id = document.getElementById("_id").value; 
-    updateBook.anunazganun = document.getElementById("AnunAzganun").value;
-    updateBook.internethxum = document.getElementById("InternetHxum").value; 
-    updateBook.siracaparat = document.getElementById("SiracAparat").value;
-    updateBook.lusankarich = document.getElementById("Lusankarich").value;
-    updateBook.nkarahanum = document.getElementById("Nkarahanum").value;
-    updateBook.urishnkar = document.getElementById("UrishNkar").value;      
-    updateBook.nkar = document.getElementById("Nkar").value;
-    updateBook.oracuyc = document.getElementById("Oracuyc").value;
-    updateBook.haytni = document.getElementById("Haytni").value;
-    updateBook.nastroyka = document.getElementById("Nastroyka").value;
-    updateBook.amenor = document.getElementById("AmenOr").value;
-    updateBook.vochamenor = document.getElementById("VochAmenOr").value;
-    updateBook.arajin = document.getElementById("Arajin").value;
-    updateBook.arxiv = document.getElementById("Arxiv").value;
-    updateBook.urisharxiv = document.getElementById("UrishArxiv").value;
+  var updatedPhoto = {};
+    updatePhoto.id = document.getElementById("_id").value; 
+    updatePhoto.anunazganun = document.getElementById("AnunAzganun").value;
+    updatePhoto.internethxum = document.getElementById("InternetHxum").value; 
+    updatePhoto.siracaparat = document.getElementById("SiracAparat").value;
+    updatePhoto.lusankarich = document.getElementById("Lusankarich").value;
+    updatePhoto.nkarahanum = document.getElementById("Nkarahanum").value;
+    updatePhoto.urishnkar = document.getElementById("UrishNkar").value;      
+    updatePhoto.nkar = document.getElementById("Nkar").value;
+    updatePhoto.oracuyc = document.getElementById("Oracuyc").value;
+    updatePhoto.haytni = document.getElementById("Haytni").value;
+    updatePhoto.nastroyka = document.getElementById("Nastroyka").value;
+    updatePhoto.amenor = document.getElementById("AmenOr").value;
+    updatePhoto.vochamenor = document.getElementById("VochAmenOr").value;
+    updatePhoto.arajin = document.getElementById("Arajin").value;
+    updatePhoto.arxiv = document.getElementById("Arxiv").value;
+    updatePhoto.urisharxiv = document.getElementById("UrishArxiv").value;
       $.ajax({
       type: 'POST',
       url: "/data/update",
-      data: updatedBook,
+      data: updatedPhoto,
       cache: false,
       dataType : 'json',
       success: function (data) {
