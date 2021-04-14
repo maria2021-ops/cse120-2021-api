@@ -78,7 +78,7 @@ function deleteData(id) {
 
     $.ajax({
         type: 'POST',
-        url: "https://cse120-2021-api-maria.herokuapp.com/data/delete",
+        url: "https://cse120-2021-api-maria.herokuapp.com/data",
         data: tmp,
         cache: false,
         dataType : 'json',
