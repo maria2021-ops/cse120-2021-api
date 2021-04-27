@@ -78,7 +78,7 @@ function deleteData(id) {
 
     $.ajax({
         type: 'POST',
-        url: "https://cse120-2021-api.herokuapp.com/data/delete",
+        url: "https://cse120-2021-api-maria.herokuapp.com/data/delete",
         data: tmp,
         cache: false,
         dataType : 'json',
@@ -121,6 +121,7 @@ function saveData() {
 function loadExistingData() {
   myBookData = [];
   myPhotoData = [];
+  otherData = [];
     $.ajax({
         type : "GET",
         url : "https://cse120-2021-api-maria.herokuapp.com/data",
@@ -135,7 +136,7 @@ function loadExistingData() {
             } else {
               myBookData.push(elem);
             }
-	  }
+          }
         })
         displayData(myPhotoData, "photoDataContainer");
         displayData(myBookData, "bookDataContainer");
@@ -219,4 +220,83 @@ function toggleBookData() {
   } else {
     bookData.style.display = "block";
   }
+}
+
+function UpdateData(e) {
+  e.preventDefault();
+  var updatedBook = {};
+    updateBook.id = document.getElementById("_id").value;
+    updateBook.anun = document.getElementById("anun").value;
+    updateBook.vernagir = document.getElementById("vernagir").value;   
+    updateBook.grox = document.getElementById("grox").value;
+    updateBook.guyn = document.getElementById("guyn").value;
+    updateBook.coverurish = document.getElementById("coverurish").value;
+    updateBook.ejiqanak = document.getElementById("EjiQanak").value;
+    updateBook.gin = document.getElementById("Gin").value;
+    updateBook.pox = document.getElementById("Pox").value;
+    updateBook.bnakan = document.getElementById("bnakan").value;
+    updateBook.anpetq = document.getElementById("Anpetq").value;
+    updateBook.chapser = document.getElementById("Chapser").value;
+    updateBook.tpagrox = document.getElementById("Tpagrox").value;
+    updateBook.or = document.getElementById("Or").value;
+    updateBook.iskakanor = document.getElementById("IskakanOr").value;
+    updateBook.tesak = document.getElementById("Tesak").value;
+    updateBook.tariq = document.getElementById("Tariq").value;    
+    updateBook.language = document.getElementById("language").value;  
+    updateBook.grelvalue = document.getElementById("grelvalue").value;
+	
+      $.ajax({
+      type: 'POST',
+      url: "/data/update",
+      data: updatedBook,
+      cache: false,
+      dataType : 'json',
+      success: function (data) {
+        console.log("success");
+      },
+      error: function (xhr) {
+        console.error("Error in post", xhr);
+      },
+      complete: function () {
+        console.log("Complete");  
+      }
+    });
+}
+
+
+function UpdatePhotoData(e) {
+  e.preventDefault();
+  var updatedPhoto = {};
+    updatePhoto.id = document.getElementById("_id").value; 
+    updatePhoto.anunazganun = document.getElementById("AnunAzganun").value;
+    updatePhoto.internethxum = document.getElementById("InternetHxum").value; 
+    updatePhoto.siracaparat = document.getElementById("SiracAparat").value;
+    updatePhoto.lusankarich = document.getElementById("Lusankarich").value;
+    updatePhoto.nkarahanum = document.getElementById("Nkarahanum").value;
+    updatePhoto.urishnkar = document.getElementById("UrishNkar").value;      
+    updatePhoto.nkar = document.getElementById("Nkar").value;
+    updatePhoto.oracuyc = document.getElementById("Oracuyc").value;
+    updatePhoto.haytni = document.getElementById("Haytni").value;
+    updatePhoto.nastroyka = document.getElementById("Nastroyka").value;
+    updatePhoto.amenor = document.getElementById("AmenOr").value;
+    updatePhoto.vochamenor = document.getElementById("VochAmenOr").value;
+    updatePhoto.arajin = document.getElementById("Arajin").value;
+    updatePhoto.arxiv = document.getElementById("Arxiv").value;
+    updatePhoto.urisharxiv = document.getElementById("UrishArxiv").value;
+      $.ajax({
+      type: 'POST',
+      url: "/data/update",
+      data: updatedPhoto,
+      cache: false,
+      dataType : 'json',
+      success: function (data) {
+        console.log("success");
+      },
+      error: function (xhr) {
+        console.error("Error in post", xhr);
+      },
+      complete: function () {
+        console.log("Complete");  
+      }
+    });
 }
