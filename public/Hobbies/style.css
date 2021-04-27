@@ -1,0 +1,103 @@
+.main {
+ width: 135%;
+ height: 300%;
+ opacity: 0.9;
+ display: fixed;
+ background-color: #B8860B;
+}
+
+.logo p1{
+  position: relative; 
+  right: 160px;
+
+}
+
+.logo img {
+width: 150px;
+position: relative;
+left: 60%;
+}
+
+h1 {
+
+  font-family: Jazz LET, fantasy; 
+  font-size: 55px;
+  color: #B8860B; 
+  text-align: left; 
+
+}
+
+p1 {
+  font-size: 20px; 
+  color: #DC143C;
+}
+
+label {
+ padding: 10px;
+ width: 100%;
+ height: 100%;
+}
+
+input {
+  border: none;
+  border-radius: 90px; 
+  background: none;
+  border-bottom: 2px solid #D2691E;
+  color: #D2691E;
+  text-align: left;
+ 
+}
+
+
+::placeholder {
+  text-align: left;
+  color:#A0522D;
+}
+
+.firstdiv {
+  border-radius: 5px;
+  border: 100px;
+  padding: 10px;
+}
+
+.Mashdiv {
+  font-family: Stencil Std, fantasy;
+  background-color: #FFFACD;
+  text-align: left;
+  border-radius: 22px;
+  width: 45%;
+  padding: 20px; 
+  border: 2px solid #BDB76B;
+
+} 
+
+
+
+#Nkarahanum {
+  background-color: aliceblue;
+  width: 140px;
+  height: 35px;
+  border-color: #A0522D;
+  background: none;
+  border-radius: 10px;
+}
+
+#Oracuyc {
+  width: 140px;
+  height: 25px;
+}
+
+#UrishNkar, #UrishArxiv {
+  display: none;
+}
+
+
+
+#submit {
+  color:white;
+  background-color:  #B8860B; 
+  width: 100px; 
+  height: 40px; 
+  border-radius: 10px;
+}
+
