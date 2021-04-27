@@ -102,7 +102,7 @@ function saveData() {
 
   $.ajax({
       type: 'POST',
-      url: "https://cse120-2021-api.herokuapp.com/data",
+      url: "https://cse120-2021-api-maria.herokuapp.com/data",
       data: tmp,
       cache: false,
       dataType : 'json',
@@ -121,10 +121,9 @@ function saveData() {
 function loadExistingData() {
   myBookData = [];
   myPhotoData = [];
-  otherData = [];
     $.ajax({
         type : "GET",
-        url : "https://cse120-2021-api.herokuapp.com/data",
+        url : "https://cse120-2021-api-maria.herokuapp.com/data",
         dataType : "json",
         success : function(data) {
           loadedData = data.data;
@@ -136,13 +135,10 @@ function loadExistingData() {
             } else {
               myBookData.push(elem);
             }
-          } else {
-            otherData.push(elem);
-          }
+	  }
         })
         displayData(myPhotoData, "photoDataContainer");
         displayData(myBookData, "bookDataContainer");
-        displayData(otherData, "otherDataContainer");
       },
         error : function(data) {
             console.log("Error");
@@ -206,14 +202,6 @@ function displayData(data, containerDivName) {
 
 }
 
-function toggleOtherData() {
-  var otherData = document.getElementById("otherDataContainer");
-  if (otherData.style.display == "block") {
-    otherData.style.display = "none";
-  } else {
-    otherData.style.display = "block";
-  }
-}
 
 function togglePhotoData() {
   var photoData = document.getElementById("photoDataContainer");
