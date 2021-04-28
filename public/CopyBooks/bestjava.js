@@ -1,6 +1,6 @@
 var BestBook = {
   "project": "Books",
-  "owner": "Maria Yeritsyan",
+  "owner": "Maria",
   "anun": "",
   "vernagir": "",
   "grox": "",
