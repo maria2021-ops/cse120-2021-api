@@ -121,7 +121,6 @@ function saveData() {
 function loadExistingData() {
   myBookData = [];
   myPhotoData = [];
-  otherData = [];
     $.ajax({
         type : "GET",
         url : "https://cse120-2021-api-maria.herokuapp.com/data",
@@ -130,7 +129,7 @@ function loadExistingData() {
           loadedData = data.data;
         	console.log("success", data);
             data.data.forEach(elem => {
-          if (elem["owner"] == "Maria") {
+          if (elem["owner"] == "MariaYeritsyan") {
             if (elem["project"] == "Photo") {
               myPhotoData.push(elem);
             } else {
