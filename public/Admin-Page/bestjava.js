@@ -221,7 +221,7 @@ function toggleBookData() {
   }
 }
 
-function UpdateBookData(e) {
+function UpdateData(e) {
   e.preventDefault();
   var updatedBook = {};
     updateBook.id = document.getElementById("_id").value;
