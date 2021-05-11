@@ -129,7 +129,7 @@ function loadExistingData() {
           loadedData = data.data;
         	console.log("success", data);
             data.data.forEach(elem => {
-          if (elem["owner"] == "MariaYeritsyan") {
+          if (elem["owner"] == "Maria") {
             if (elem["project"] == "Photo") {
               myPhotoData.push(elem);
             } else {
