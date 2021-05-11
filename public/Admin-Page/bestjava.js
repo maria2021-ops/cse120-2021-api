@@ -119,8 +119,8 @@ function saveData() {
 }
 
 function loadExistingData() {
-  myBookData = [];
   myPhotoData = [];
+  myBookData = [];
     $.ajax({
         type : "GET",
         url : "https://cse120-2021-api-maria.herokuapp.com/data",
