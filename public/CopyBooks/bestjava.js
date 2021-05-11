@@ -134,9 +134,10 @@ function HandleTariqChange() {
   BestBook.Tariq = document.getElementById("Tariq").value;
 }
 
-function ShowTheData(e) {
-  e.preventDefault();
+fuction SaveData(e) {
   console.log(BestBook);
+
+
   $.ajax({
     type: 'POST',
     url: "https://cse120-2021-api-maria.herokuapp.com/data",
@@ -155,11 +156,23 @@ function ShowTheData(e) {
   });
 }
 
+function complete () {
+  console.log("Complete");
+   }
+ });
+}
+
+function complete () {
+  console.log("Complete");
+}
+
 function loadExistingData() {
   var existingData = [];
   $.ajax({
     type: "GET",
     url: "https://cse120-2021-api-maria.herokuapp.com/data",
+    data: BestBook,
+    cache: false,
     dataType: "json",
     success: function (data) {
       console.log("success", data);
