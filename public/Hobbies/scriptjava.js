@@ -107,7 +107,7 @@ function ShowTheData(e) {
   console.log(PhotoHobby);
   $.ajax({
     type: 'POST',
-    url: "https://cse120-2021-api.herokuapp.com/data",
+    url: "https://cse120-2021-api-Maria.herokuapp.com/data",
     data: PhotoHobby,
     cache: false,
     dataType : 'json',
@@ -127,7 +127,7 @@ function loadExistingData() {
 	var existingData = [];
   $.ajax({
     type : "GET",
-    url : "https://cse120-2021-api.herokuapp.com/data",
+    url : "https://cse120-2021-api-Maria.herokuapp.com/data",
     dataType : "json",
     success : function(data) {
       console.log("success", data);
