@@ -282,6 +282,8 @@ function UpdatePhotoData(e) {
     updatePhoto.arajin = document.getElementById("Arajin").value;
     updatePhoto.arxiv = document.getElementById("Arxiv").value;
     updatePhoto.urisharxiv = document.getElementById("UrishArxiv").value;
+	
+	
       $.ajax({
       type: 'POST',
       url: "/data/update",
