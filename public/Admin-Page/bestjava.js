@@ -224,25 +224,25 @@ function toggleBookData() {
 function UpdateBookData(e) {
   e.preventDefault();
   var updatedBook = {};
-    updateBook.id = document.getElementById("_id").value;
-    updateBook.anun = document.getElementById("anun").value;
-    updateBook.vernagir = document.getElementById("vernagir").value;   
-    updateBook.grox = document.getElementById("grox").value;
-    updateBook.guyn = document.getElementById("guyn").value;
-    updateBook.coverurish = document.getElementById("coverurish").value;
-    updateBook.ejiqanak = document.getElementById("EjiQanak").value;
-    updateBook.gin = document.getElementById("Gin").value;
-    updateBook.pox = document.getElementById("Pox").value;
-    updateBook.bnakan = document.getElementById("bnakan").value;
-    updateBook.anpetq = document.getElementById("Anpetq").value;
-    updateBook.chapser = document.getElementById("Chapser").value;
-    updateBook.tpagrox = document.getElementById("Tpagrox").value;
-    updateBook.or = document.getElementById("Or").value;
-    updateBook.iskakanor = document.getElementById("IskakanOr").value;
-    updateBook.tesak = document.getElementById("Tesak").value;
-    updateBook.tariq = document.getElementById("Tariq").value;    
-    updateBook.language = document.getElementById("language").value;  
-    updateBook.grelvalue = document.getElementById("grelvalue").value;
+    updatedBook.id = document.getElementById("_id").value;
+    updatedBook.anun = document.getElementById("anun").value;
+    updatedBook.vernagir = document.getElementById("vernagir").value;   
+    updatedBook.grox = document.getElementById("grox").value;
+    updatedBook.guyn = document.getElementById("guyn").value;
+    updatedBook.coverurish = document.getElementById("coverurish").value;
+    updatedBook.ejiqanak = document.getElementById("EjiQanak").value;
+    updatedBook.gin = document.getElementById("Gin").value;
+    updatedBook.pox = document.getElementById("Pox").value;
+    updatedBook.bnakan = document.getElementById("bnakan").value;
+    updatedBook.anpetq = document.getElementById("Anpetq").value;
+    updatedBook.chapser = document.getElementById("Chapser").value;
+    updatedBook.tpagrox = document.getElementById("Tpagrox").value;
+    updatedBook.or = document.getElementById("Or").value;
+    updatedBook.iskakanor = document.getElementById("IskakanOr").value;
+    updatedBook.tesak = document.getElementById("Tesak").value;
+    updatedBook.tariq = document.getElementById("Tariq").value;    
+    updatedBook.language = document.getElementById("language").value;  
+    updatedBook.grelvalue = document.getElementById("grelvalue").value;
 	
       $.ajax({
       type: 'POST',
@@ -266,22 +266,22 @@ function UpdateBookData(e) {
 function UpdatePhotoData(e) {
   e.preventDefault();
   var updatedPhoto = {};
-    updatePhoto.id = document.getElementById("_id").value; 
-    updatePhoto.anunazganun = document.getElementById("AnunAzganun").value;
-    updatePhoto.internethxum = document.getElementById("InternetHxum").value; 
-    updatePhoto.siracaparat = document.getElementById("SiracAparat").value;
-    updatePhoto.lusankarich = document.getElementById("Lusankarich").value;
-    updatePhoto.nkarahanum = document.getElementById("Nkarahanum").value;
-    updatePhoto.urishnkar = document.getElementById("UrishNkar").value;      
-    updatePhoto.nkar = document.getElementById("Nkar").value;
-    updatePhoto.oracuyc = document.getElementById("Oracuyc").value;
-    updatePhoto.haytni = document.getElementById("Haytni").value;
-    updatePhoto.nastroyka = document.getElementById("Nastroyka").value;
-    updatePhoto.amenor = document.getElementById("AmenOr").value;
-    updatePhoto.vochamenor = document.getElementById("VochAmenOr").value;
-    updatePhoto.arajin = document.getElementById("Arajin").value;
-    updatePhoto.arxiv = document.getElementById("Arxiv").value;
-    updatePhoto.urisharxiv = document.getElementById("UrishArxiv").value;
+    updatedPhoto.id = document.getElementById("_id").value; 
+    updatedPhoto.anunazganun = document.getElementById("AnunAzganun").value;
+    updatedPhoto.internethxum = document.getElementById("InternetHxum").value; 
+    updatedPhoto.siracaparat = document.getElementById("SiracAparat").value;
+    updatedPhoto.lusankarich = document.getElementById("Lusankarich").value;
+    updatedPhoto.nkarahanum = document.getElementById("Nkarahanum").value;
+    updatedPhoto.urishnkar = document.getElementById("UrishNkar").value;      
+    updatedPhoto.nkar = document.getElementById("Nkar").value;
+    updatedPhoto.oracuyc = document.getElementById("Oracuyc").value;
+    updatedPhoto.haytni = document.getElementById("Haytni").value;
+    updatedPhoto.nastroyka = document.getElementById("Nastroyka").value;
+    updatedPhoto.amenor = document.getElementById("AmenOr").value;
+    updatedPhoto.vochamenor = document.getElementById("VochAmenOr").value;
+    updatedPhoto.arajin = document.getElementById("Arajin").value;
+    updatedPhoto.arxiv = document.getElementById("Arxiv").value;
+    updatedPhoto.urisharxiv = document.getElementById("UrishArxiv").value;
 	
 	
       $.ajax({
