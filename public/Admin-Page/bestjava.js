@@ -232,7 +232,7 @@ function UpdateBookData(e) {
     updatedBook.ejiqanak = document.getElementById("EjiQanak").value;
     updatedBook.gin = document.getElementById("Gin").value;
     updatedBook.tariq = document.getElementById("Tariq").value;    
-    updatedBook.language = document.getElementById("language").value;  
+
  
 	
       $.ajax({
