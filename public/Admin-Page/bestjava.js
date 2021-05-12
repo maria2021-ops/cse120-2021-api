@@ -10,19 +10,16 @@ function loadBookEditItem() {
     document.getElementById("grox").value = editItem["grox"];
     document.getElementById("guyn").value = editItem["guyn"];
     document.getElementById("coverurish").value = editItem["coverurish"];
-    document.getElementById("EjiQanak").value = editItem["EjiQanak"];
     document.getElementById("Gin").value = editItem["Gin"];
     document.getElementById("Pox").value = editItem["Pox"];
     document.getElementById("bnakan").value = editItem["bnakan"];
     document.getElementById("Anpetq").value = editItem["Anpetq"];
-    document.getElementById("Chapser").value = editItem["Chapser"];
     document.getElementById("Tpagrox").value = editItem["Tpagrox"];
     document.getElementById("Or").value = editItem["Or"];
-    document.getElementById("IskakanOr").value = editItem["IskakanOr"];
     document.getElementById("Tesak").value = editItem["Tesak"];
     document.getElementById("Tariq").value = editItem["Tariq"];    
     document.getElementById("language").value = editItem["language"];  
-    document.getElementById("grelvalue").value = editItem["grelvalue"];
+
 }
 
 function loadPhotoEditItem() {
