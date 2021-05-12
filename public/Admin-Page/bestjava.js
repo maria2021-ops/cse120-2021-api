@@ -231,12 +231,9 @@ function UpdateBookData(e) {
     updatedBook.coverurish = document.getElementById("coverurish").value;
     updatedBook.ejiqanak = document.getElementById("EjiQanak").value;
     updatedBook.gin = document.getElementById("Gin").value;
-    updatedBook.bnakan = document.getElementById("bnakan").value;
-    updatedBook.iskakanor = document.getElementById("IskakanOr").value;
-    updatedBook.tesak = document.getElementById("Tesak").value;
     updatedBook.tariq = document.getElementById("Tariq").value;    
     updatedBook.language = document.getElementById("language").value;  
-    updatedBook.grelvalue = document.getElementById("grelvalue").value;
+ 
 	
       $.ajax({
       type: 'POST',
