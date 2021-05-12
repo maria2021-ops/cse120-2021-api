@@ -147,7 +147,7 @@ function loadExistingData() {
 function displayData(existingData) {
   document.getElementById("existingData").innerHTML = "<ul>";
   for (var i = 0; i < existingData.length; i++) {
-    currentPhoto = existingData[i];
-    document.getElementById("existingData").innerHTML += "<li><i>" + currentPhoto.fullname + "</li> : <b>" + currentPhoto.title + "</b></li>";
+    currentBook = existingData[i];
+    document.getElementById("existingData").innerHTML += "<li><i>" + currentBook.fullname + "</li> : <b>" + currentBook.title + "</b></li>";
   }
 }
