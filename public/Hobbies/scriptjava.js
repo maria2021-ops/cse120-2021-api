@@ -120,6 +120,8 @@ function ShowTheData(e) {
     return;
   } else {
 console.log(PhotoHobby);
+  }
+}
 
 
 function ShowTheData(e) {
@@ -145,6 +147,7 @@ function ShowTheData(e) {
 
 function complete () {
 	console.log("Complete");
+}
 
 function loadExistingData() {
 	var existingData = [];
