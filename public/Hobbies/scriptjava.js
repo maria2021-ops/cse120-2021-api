@@ -1,6 +1,6 @@
 
 var PhotoHobby = {
-  "Project": "Photo",
+  "project": "Photo",
   "owner": "Maria Yeritsyan",
   "AnunAzganun": "",
   "InternetHxum": "",
