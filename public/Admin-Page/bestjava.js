@@ -228,16 +228,10 @@ function UpdateBookData(e) {
     updatedBook.anun = document.getElementById("anun").value;
     updatedBook.vernagir = document.getElementById("vernagir").value;   
     updatedBook.grox = document.getElementById("grox").value;
-    updatedBook.guyn = document.getElementById("guyn").value;
     updatedBook.coverurish = document.getElementById("coverurish").value;
     updatedBook.ejiqanak = document.getElementById("EjiQanak").value;
     updatedBook.gin = document.getElementById("Gin").value;
-    updatedBook.pox = document.getElementById("Pox").value;
     updatedBook.bnakan = document.getElementById("bnakan").value;
-    updatedBook.anpetq = document.getElementById("Anpetq").value;
-    updatedBook.chapser = document.getElementById("Chapser").value;
-    updatedBook.tpagrox = document.getElementById("Tpagrox").value;
-    updatedBook.or = document.getElementById("Or").value;
     updatedBook.iskakanor = document.getElementById("IskakanOr").value;
     updatedBook.tesak = document.getElementById("Tesak").value;
     updatedBook.tariq = document.getElementById("Tariq").value;    
