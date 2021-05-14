@@ -174,13 +174,14 @@ console.log(BestBook);
     },
     complete: function () {
       console.log("Complete");
-       window.location.href = "https://cse120-2021-api-maria.herokuapp.com";
+
     }
   });
 
 
 function complete () {
   console.log("Complete");
+  window.location.href = "https://cse120-2021-api-maria.herokuapp.com";
  
 }
 
