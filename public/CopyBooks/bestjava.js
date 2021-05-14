@@ -134,7 +134,7 @@ function HandleTariqChange() {
   BestBook.Tariq = document.getElementById("Tariq").value;
 }
 
-fuction SaveData(e) {
+fuction ShowTheData(e) {
   console.log(BestBook);
 
 
