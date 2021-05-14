@@ -1,26 +1,31 @@
 .Mariadiv {
-   background-color:  steelblue; 
-   size: 10px 
+   background-color:  steelblue;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px; 
+
  }
  
  * {
  color: #4169E1;
+
  }
 
 h1 {
  font-family: Roboto; 
  color: darkblue; 
- padding: 10px; 
- margin: 8px
+
+
 }
 p1 {
  font-size: 20px; 
- color: Tomato
+ color: Tomato;
+ margin: 10px;
 }
 input {
- padding: 5px; 
- margin: 10px;
  background-color: #FFFAFA;
+ height: 25px;
+ padding: 10px;
 }
 
 #Maria, #multicolor, #number {
@@ -29,8 +34,9 @@ input {
 }
 .best {
  background-color: white;
- border-radius: 2px;
- padding: 10px;
+ border-radius: 5px;
+ padding: 15px;
+ margin: 10px;
 }
 
 #grel, #coverurish, #bnakan {
