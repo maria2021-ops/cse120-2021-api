@@ -1,9 +1,6 @@
 var requiredFields = [ "anun" , "vernagir", "grox", "guyn"
 ]
 
-function goToDashboard() {
-  location.href = "https://cse120-2021-api-maria.herokuapp.com/Admin-Page/index.html"
-}
 
 var BestBook = {
   "project": "Books",
@@ -183,7 +180,7 @@ console.log(BestBook);
 
 function complete () {
   console.log("Complete");
-  window.location.href = "https://cse120-2021-api-maria.herokuapp.com/";
+  window.location.href = "https://cse120-2021-api-maria.herokuapp.com";
 }
 
 
