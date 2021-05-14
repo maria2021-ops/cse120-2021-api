@@ -144,13 +144,14 @@ function ShowTheData(e) {
     },
     complete: function () {
       console.log("Complete");  
+      document.location="https://cse120-2021-api-maria.herokuapp.com/index.html";
     }
   });
 }
 
 function complete () {
 	console.log("Complete");
-  window.location.href = "https://cse120-2021-api-maria.herokuapp.com";
+
 }
 
 function loadExistingData() {
@@ -164,10 +165,10 @@ function loadExistingData() {
       console.log("success", data);
       existingData = data;
       displayData(existingData.data);
+      
     },
     error : function(data) {
         console.error("Error: in post");
-	window.location.href = "https://cse120-2021-api-maria.herokuapp.com"
     }
   });
 }
