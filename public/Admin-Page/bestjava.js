@@ -240,6 +240,7 @@ function UpdateBookData(e) {
       },
       complete: function () {
         console.log("Complete");  
+  window.location.href = "https://cse120-2021-api-maria.herokuapp.com/Admin-Page/index.html"
       }
     });
 }
