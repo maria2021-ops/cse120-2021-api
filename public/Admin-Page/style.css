@@ -46,16 +46,16 @@ div.item button.edit {
 }
 
 .EditBook {
-  width: 150%;
-  height: 300%;
-  background-color: #B8860B
+  background-color: darkgoldenrod;
 }
 
 #_id, #AnunAzganun, #InternetHxum, #SiracAparat, #Lusankarich, #Nkarahanum, #UrishNkar, #Nkar, #Oracuyc, #Haytni, #Nastroyka, #AmenOr, #VochAmenOr, #Arajin, #Arxiv, #UrishArxiv {
-  width: 100px;
-  height: 15px;
+  width: 130px;
   background-color: blanchedalmond;
   font-size: 15px;
+  position: relative;
+  margin: 3px;
+  padding: 2px;
 
 
 } 
@@ -65,6 +65,29 @@ div.item button.edit {
   height: 30px;
   color:  olive;
   background-color: bisque;
+  font-size: 17px;
+}
+
+.EditGirq {
+  background-color: cornflowerblue;
+}
+
+#_id, #anun, #vernagir, #grox, #guyn, #coverurish, #EjiQanak, #Gin, #Gin, #Pox, #bnakan, #Anpetq, #Chapser, #Tpagrox, #Or, #IskakanOr, #Tariq, #grelvalue, #language {
+  width: 130px;
+  background-color: floralwhite;
   font-size: 15px;
+  position: relative;
+  margin: 3px;
+  padding: 2px;
+
+
+} 
+
+#NorGirq{
+  width: 80px;
+  height: 30px;
+  color: darkblue;
+  background-color:  papayawhip;
+  font-size: 17px;
 }
 
