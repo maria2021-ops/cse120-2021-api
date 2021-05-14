@@ -168,6 +168,7 @@ console.log(BestBook);
     dataType: 'json',
     success: function (data) {
       console.log("success");
+      document.location="https://cse120-2021-api-maria.herokuapp.com/index.html";
     },
     error: function (xhr) {
       console.error("Error in post", xhr);
@@ -181,7 +182,6 @@ console.log(BestBook);
 
 function complete () {
   console.log("Complete");
-  window.location.href = "https://cse120-2021-api-maria.herokuapp.com";
  
 }
 
