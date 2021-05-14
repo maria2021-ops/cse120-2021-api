@@ -1,3 +1,9 @@
+var requiredFields = [ "AnunAzganun" , "SiracAparat", "Nkarahanum", "Haytni"
+]
+
+function goToDashboard() {
+  location.href = "https://cse120-2021-api-maria.herokuapp.com/Admin-Page/index.html"
+}
 
 var PhotoHobby = {
   "project": "Photo",
