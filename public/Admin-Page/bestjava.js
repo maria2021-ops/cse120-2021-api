@@ -13,12 +13,7 @@ function loadBookEditItem() {
     document.getElementById("vernagir").value = editItem["vernagir"];   
     document.getElementById("grox").value = editItem["grox"];
     document.getElementById("guyn").value = editItem["guyn"];
-    document.getElementById("coverurish").value = editItem["coverurish"];
     document.getElementById("Gin").value = editItem["Gin"];
-    document.getElementById("Pox").value = editItem["Pox"];
-    document.getElementById("bnakan").value = editItem["bnakan"];
-    document.getElementById("Anpetq").value = editItem["Anpetq"];
-    document.getElementById("Tpagrox").value = editItem["Tpagrox"];
     document.getElementById("Or").value = editItem["Or"];
     document.getElementById("Tesak").value = editItem["Tesak"];
     document.getElementById("Tariq").value = editItem["Tariq"];    
@@ -41,11 +36,6 @@ function loadPhotoEditItem() {
     document.getElementById("Oracuyc").value = editItem["Oracuyc"];
     document.getElementById("Haytni").value = editItem["Haytni"];
     document.getElementById("Nastroyka").value = editItem["Nastroyka"];
-    document.getElementById("AmenOr").value = editItem["AmenOr"];
-    document.getElementById("VochAmenOr").value = editItem["VochAmenOr"];
-    document.getElementById("Arajin").value = editItem["Arajin"];
-    document.getElementById("Arxiv").value = editItem["Arxiv"];
-    document.getElementById("UrishArxiv").value = editItem["UrishArxiv"];
 }
 
 function editData(id) {
