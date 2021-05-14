@@ -45,5 +45,26 @@ div.item button.edit {
   background-color: #FAEBD7;
 }
 
+.EditBook {
+  width: 150%;
+  height: 300%;
+  background-color: #B8860B
+}
 
+#_id, #AnunAzganun, #InternetHxum, #SiracAparat, #Lusankarich, #Nkarahanum, #UrishNkar, #Nkar, #Oracuyc, #Haytni, #Nastroyka, #AmenOr, #VochAmenOr, #Arajin, #Arxiv, #UrishArxiv {
+  width: 100px;
+  height: 15px;
+  background-color: blanchedalmond;
+  font-size: 15px;
+
+
+} 
+
+#NorBan{
+  width: 80px;
+  height: 30px;
+  color:  olive;
+  background-color: bisque;
+  font-size: 15px;
+}
 

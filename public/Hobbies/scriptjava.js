@@ -167,7 +167,7 @@ function loadExistingData() {
     },
     error : function(data) {
         console.error("Error: in post");
-	window.location.href = "https://cse120-2021-api-maria.herokuapp.com/Admin-Page/index.html"
+	window.location.href = "https://cse120-2021-api-maria.herokuapp.com"
     }
   });
 }
