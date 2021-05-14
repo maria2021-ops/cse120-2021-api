@@ -1,7 +1,7 @@
 var requiredFields = [ "AnunAzganun" , "SiracAparat", "Nkarahanum", "Haytni"
 ]
 
-function goToDashboard() {
+function goToAdminPage() {
   location.href = "https://cse120-2021-api-maria.herokuapp.com/Admin-Page/index.html"
 }
 
