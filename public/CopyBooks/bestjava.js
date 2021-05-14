@@ -1,3 +1,10 @@
+var requiredFields = [ "anun" , "vernagir", "grox", "guyn"
+]
+
+function goToDashboard() {
+  location.href = "https://cse120-2021-api-maria.herokuapp.com/Admin-Page/index.html"
+}
+
 var BestBook = {
   "project": "Books",
   "owner": "Maria Yeritsyan",
@@ -134,9 +141,27 @@ function HandleTariqChange() {
   BestBook.Tariq = document.getElementById("Tariq").value;
 }
 
-function SaveData(e) {
-  console.log(BestBook);
+function validateFormData() {
+  var isFormValid = true;
+  var keys = Object.keys(BestBook);
+  keys.forEach(key => {
+      if (requiredFields.indexOf(key) > -1 && BestBook[key] == "") { console.log(key, " is a required field, please add a value") 
+      if(document.getElementById(key)) {
+        document.getElementById(key).style.backgroundColor = "red"; 
+        isFormValid = false;
+      }
+    }   
+  })
+  return isFormValid;
+}
 
+function ShowTheData(e) {
+  if(validateFormData() == false) {
+    return;
+  } else {
+console.log(BestBook);
+  }
+}
 
   $.ajax({
     type: 'POST',
@@ -154,11 +179,12 @@ function SaveData(e) {
       console.log("Complete");
     }
   });
-}
+
 
 function complete () {
   console.log("Complete");
 }
+
 
 function loadExistingData() {
   var existingData = [];
@@ -178,5 +204,3 @@ function loadExistingData() {
     }
   });
 }
-
-
