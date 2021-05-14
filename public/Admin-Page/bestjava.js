@@ -1,5 +1,9 @@
 var loadedData = [];
 
+function goToDashboard() {
+  location.href = "https://cse120-2021-api-maria.herokuapp.com/Admin-Page/index.html"
+}
+
 function loadBookEditItem() {
     localStorage = window.localStorage;
     editItem = JSON.parse(localStorage.getItem("editItem"));
@@ -286,6 +290,7 @@ function UpdatePhotoData(e) {
       },
       complete: function () {
         console.log("Complete");  
+	window.location.href = "https://cse120-2021-api-maria.herokuapp.com/Admin-Page/index.html"
       }
     });
 }
