@@ -134,7 +134,7 @@ function HandleTariqChange() {
   BestBook.Tariq = document.getElementById("Tariq").value;
 }
 
-fuction SaveData(e) {
+function SaveData(e) {
   console.log(BestBook);
 
 
@@ -154,12 +154,6 @@ fuction SaveData(e) {
       console.log("Complete");
     }
   });
-}
-
-function complete () {
-  console.log("Complete");
-   }
- });
 }
 
 function complete () {

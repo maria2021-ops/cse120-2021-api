@@ -1,3 +1,9 @@
+var requiredFields = [ "AnunAzganun" , "SiracAparat", "Nkarahanum", "Haytni"
+]
+
+function goToAdminPage() {
+  location.href = "https://cse120-2021-api-maria.herokuapp.com/Admin-Page/index.html"
+}
 
 var PhotoHobby = {
   "project": "Photo",
@@ -101,6 +107,28 @@ function HandleUrishArxivChange() {
   }
 }
 
+function validateFormData() {
+  var isFormValid = true;
+  var keys = Object.keys(PhotoHobby);
+  keys.forEach(key => {
+      if (requiredFields.indexOf(key) > -1 && PhotoHobby[key] == "") { console.log(key, " is a required field, please add a value") 
+      if(document.getElementById(key)) {
+        document.getElementById(key).style.backgroundColor = "red"; 
+        isFormValid = false;
+      }
+    }   
+  })
+  return isFormValid;
+}
+
+function ShowTheData(e) {
+  if(validateFormData() == false) {
+    return;
+  } else {
+console.log(PhotoHobby);
+  }
+}
+
 
 function ShowTheData(e) {
   e.preventDefault();
@@ -125,6 +153,7 @@ function ShowTheData(e) {
 
 function complete () {
 	console.log("Complete");
+}
 
 function loadExistingData() {
 	var existingData = [];
@@ -140,6 +169,7 @@ function loadExistingData() {
     },
     error : function(data) {
         console.error("Error: in post");
+	window.location.href = "https://cse120-2021-api-maria.herokuapp.com/Admin-Page/index.html"
     }
   });
 }

@@ -1,5 +1,9 @@
 var loadedData = [];
 
+function goToDashboard() {
+  location.href = "https://cse120-2021-api-maria.herokuapp.com/Admin-Page/index.html"
+}
+
 function loadBookEditItem() {
     localStorage = window.localStorage;
     editItem = JSON.parse(localStorage.getItem("editItem"));
@@ -9,12 +13,7 @@ function loadBookEditItem() {
     document.getElementById("vernagir").value = editItem["vernagir"];   
     document.getElementById("grox").value = editItem["grox"];
     document.getElementById("guyn").value = editItem["guyn"];
-    document.getElementById("coverurish").value = editItem["coverurish"];
     document.getElementById("Gin").value = editItem["Gin"];
-    document.getElementById("Pox").value = editItem["Pox"];
-    document.getElementById("bnakan").value = editItem["bnakan"];
-    document.getElementById("Anpetq").value = editItem["Anpetq"];
-    document.getElementById("Tpagrox").value = editItem["Tpagrox"];
     document.getElementById("Or").value = editItem["Or"];
     document.getElementById("Tesak").value = editItem["Tesak"];
     document.getElementById("Tariq").value = editItem["Tariq"];    
@@ -37,11 +36,6 @@ function loadPhotoEditItem() {
     document.getElementById("Oracuyc").value = editItem["Oracuyc"];
     document.getElementById("Haytni").value = editItem["Haytni"];
     document.getElementById("Nastroyka").value = editItem["Nastroyka"];
-    document.getElementById("AmenOr").value = editItem["AmenOr"];
-    document.getElementById("VochAmenOr").value = editItem["VochAmenOr"];
-    document.getElementById("Arajin").value = editItem["Arajin"];
-    document.getElementById("Arxiv").value = editItem["Arxiv"];
-    document.getElementById("UrishArxiv").value = editItem["UrishArxiv"];
 }
 
 function editData(id) {
@@ -255,21 +249,14 @@ function UpdatePhotoData(e) {
   e.preventDefault();
   var updatedPhoto = {};
     updatedPhoto.id = document.getElementById("_id").value; 
-    updatedPhoto.anunazganun = document.getElementById("AnunAzganun").value;
-    updatedPhoto.internethxum = document.getElementById("InternetHxum").value; 
-    updatedPhoto.siracaparat = document.getElementById("SiracAparat").value;
-    updatedPhoto.lusankarich = document.getElementById("Lusankarich").value;
-    updatedPhoto.nkarahanum = document.getElementById("Nkarahanum").value;
-    updatedPhoto.urishnkar = document.getElementById("UrishNkar").value;      
-    updatedPhoto.nkar = document.getElementById("Nkar").value;
-    updatedPhoto.oracuyc = document.getElementById("Oracuyc").value;
-    updatedPhoto.haytni = document.getElementById("Haytni").value;
-    updatedPhoto.nastroyka = document.getElementById("Nastroyka").value;
-    updatedPhoto.amenor = document.getElementById("AmenOr").value;
-    updatedPhoto.vochamenor = document.getElementById("VochAmenOr").value;
-    updatedPhoto.arajin = document.getElementById("Arajin").value;
-    updatedPhoto.arxiv = document.getElementById("Arxiv").value;
-    updatedPhoto.urisharxiv = document.getElementById("UrishArxiv").value;
+    updatedPhoto.AnunAzganun = document.getElementById("AnunAzganun").value;
+    updatedPhoto.InternetHxum = document.getElementById("InternetHxum").value; 
+    updatedPhoto.SiracAparat = document.getElementById("SiracAparat").value;
+    updatedPhoto.Lusankarich = document.getElementById("Lusankarich").value;
+    updatedPhoto.Nkarahanum = document.getElementById("Nkarahanum").value;
+    updatedPhoto.UrishNkar = document.getElementById("UrishNkar").value;      
+    updatedPhoto.Nkar = document.getElementById("Nkar").value;
+    
 	
 	
       $.ajax({
@@ -286,6 +273,7 @@ function UpdatePhotoData(e) {
       },
       complete: function () {
         console.log("Complete");  
+	window.location.href = "https://cse120-2021-api-maria.herokuapp.com/Admin-Page/index.html"
       }
     });
 }
