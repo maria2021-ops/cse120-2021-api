@@ -259,13 +259,13 @@ function UpdatePhotoData(e) {
   e.preventDefault();
   var updatedPhoto = {};
     updatedPhoto.id = document.getElementById("_id").value; 
-    updatedPhoto.anunazganun = document.getElementById("AnunAzganun").value;
-    updatedPhoto.internethxum = document.getElementById("InternetHxum").value; 
-    updatedPhoto.siracaparat = document.getElementById("SiracAparat").value;
-    updatedPhoto.lusankarich = document.getElementById("Lusankarich").value;
-    updatedPhoto.nkarahanum = document.getElementById("Nkarahanum").value;
-    updatedPhoto.urishnkar = document.getElementById("UrishNkar").value;      
-    updatedPhoto.nkar = document.getElementById("Nkar").value;
+    updatedPhoto.AnunAzganun = document.getElementById("AnunAzganun").value;
+    updatedPhoto.InternetHxum = document.getElementById("InternetHxum").value; 
+    updatedPhoto.SiracAparat = document.getElementById("SiracAparat").value;
+    updatedPhoto.Lusankarich = document.getElementById("Lusankarich").value;
+    updatedPhoto.Nkarahanum = document.getElementById("Nkarahanum").value;
+    updatedPhoto.UrishNkar = document.getElementById("UrishNkar").value;      
+    updatedPhoto.Nkar = document.getElementById("Nkar").value;
     
 	
 	
