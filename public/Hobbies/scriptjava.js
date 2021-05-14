@@ -144,7 +144,7 @@ function ShowTheData(e) {
     },
     complete: function () {
       console.log("Complete");  
-      document.location="https://cse120-2021-api-maria.herokuapp.com/index.html";
+      document.location="https://cse120-2021-api-maria.herokuapp.com/";
     }
   });
 }
