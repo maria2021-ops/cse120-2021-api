@@ -266,14 +266,7 @@ function UpdatePhotoData(e) {
     updatedPhoto.nkarahanum = document.getElementById("Nkarahanum").value;
     updatedPhoto.urishnkar = document.getElementById("UrishNkar").value;      
     updatedPhoto.nkar = document.getElementById("Nkar").value;
-    updatedPhoto.oracuyc = document.getElementById("Oracuyc").value;
-    updatedPhoto.haytni = document.getElementById("Haytni").value;
-    updatedPhoto.nastroyka = document.getElementById("Nastroyka").value;
-    updatedPhoto.amenor = document.getElementById("AmenOr").value;
-    updatedPhoto.vochamenor = document.getElementById("VochAmenOr").value;
-    updatedPhoto.arajin = document.getElementById("Arajin").value;
-    updatedPhoto.arxiv = document.getElementById("Arxiv").value;
-    updatedPhoto.urisharxiv = document.getElementById("UrishArxiv").value;
+    
 	
 	
       $.ajax({
