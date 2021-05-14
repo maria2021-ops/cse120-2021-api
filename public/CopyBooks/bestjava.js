@@ -158,12 +158,6 @@ fuction SaveData(e) {
 
 function complete () {
   console.log("Complete");
-   }
- });
-}
-
-function complete () {
-  console.log("Complete");
 }
 
 function loadExistingData() {
