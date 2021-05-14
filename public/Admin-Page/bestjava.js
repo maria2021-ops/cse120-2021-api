@@ -267,13 +267,14 @@ function UpdatePhotoData(e) {
       dataType : 'json',
       success: function (data) {
         console.log("success");
+	window.location.href = "https://cse120-2021-api-maria.herokuapp.com/Admin-Page/index.html"
       },
       error: function (xhr) {
         console.error("Error in post", xhr);
       },
       complete: function () {
         console.log("Complete");  
-	window.location.href = "https://cse120-2021-api-maria.herokuapp.com/Admin-Page/index.html"
+	
       }
     });
 }
