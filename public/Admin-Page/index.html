@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+ 
 		<title> My Admin Page</title >
+
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script type="text/javascript" src="bestjava.js"></script>
 		<script
@@ -9,7 +11,9 @@
 			integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
 			crossorigin="anonymous"></script>
 	</head>
-
+     
+    <div class="container">
+    <button id="GoBack">Go Back</button></div>
 	<body onload="loadExistingData()">
 		<h1 style="border-bottom: double; color: #2F4F4F">My Admin Page</h1>
     <div>
@@ -18,8 +22,7 @@
     </div>
     <div style="clear:left;">
       <br><hr>
-      <h2 onclick="toggleBookData()" style="cursor:pointer;font-family: Gill Sans Extrabold; color: #
-#f7d003">My Book Data</h2>
+      <h2 onclick="toggleBookData()" style="cursor:pointer;font-family: Gill Sans Extrabold; color: #f3a360">My Book Data</h2>
       <div id="bookDataContainer">Loading...</div>
     </div>
 	</body>
