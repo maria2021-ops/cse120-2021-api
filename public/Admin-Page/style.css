@@ -38,8 +38,7 @@ div.item button {
 }
 
 div.item button.edit {
-  right: 30px;
-  left: : 10px;
+  left: : 30px;
   background-color: #FAEBD7;
 }
 
