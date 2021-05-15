@@ -175,6 +175,7 @@ console.log(BestBook);
     },
     complete: function () {
       console.log("Complete");
+      
 
     }
   });
