@@ -39,7 +39,7 @@ div.item button {
 }
 
 div.item button.edit {
-  right: 70px;
+  right: 30px;
   bottom: 10px;
   background-color: #FAEBD7;
 }
