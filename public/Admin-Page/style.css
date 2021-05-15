@@ -32,8 +32,9 @@ div.item {
 }
 
 div.item button {
+  position: absolute;
   bottom: 10px;
-  background-color: ##ff34594d;
+  background-color: #ff34594d;
 }
 
 div.item button.edit {
