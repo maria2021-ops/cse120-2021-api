@@ -37,6 +37,7 @@ div.item button {
     background-color: #FAEBD7;
 
 div.item button.edit {
+    position: absolute;
     right: 30px;
     bottom: 10px;
     background-color: #FAEBD7;
