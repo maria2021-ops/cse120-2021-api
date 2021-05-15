@@ -138,6 +138,7 @@ function ShowTheData(e) {
     dataType : 'json',
     success: function (data) {
       console.log("success");
+  
     },
     error: function (xhr) {
       console.error("Error in post", xhr);
